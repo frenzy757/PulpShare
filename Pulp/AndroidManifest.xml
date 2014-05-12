@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pulp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+     <permission
+        android:name="com.google.cloud.backend.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.cloud.backend.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.pulp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.pulp.ShareOptionLauncherShell"
+            android:label="@string/title_action_detail"
+            android:parentActivityName="com.pulp.MainActivity" 
+            android:screenOrientation="portrait">
+            
+    
+	<!--  for twitter   -->
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="oauth" android:host="com.Pulp"  android:pathPattern = ".*"/>
+    </intent-filter>
+    
+    <intent-filter>  
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="http" android:host="com.pulp.share" android:pathPattern = ".*"/>
+    </intent-filter>
+    
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+         <activity android:name="com.facebook.LoginActivity" android:label="@string/app_name"></activity>
+         
+         
+         <activity
+      android:name="com.foursquare.android.nativeoauth.TokenExchangeActivity"
+      android:theme="@android:style/Theme.Dialog" />
+       
+     
+         <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyCswlkZ9LLrIITD_nEHtLpPymi9mOiB8Wk"/>
+         
+         <!--AIzaSyBbj0HFk2uuPmjVoItKcBHyz0Wz8vutz6Q-->
+           
+         <!-- 
+          <service android:name="com.google.cloud.backend.GCMIntentService" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.google.cloud.solutions.sampleapps.mobilebackend" />
+            </intent-filter>
+        </receiver> -->
+
+        <service android:name="com.google.cloud.backend.GCMIntentService" />
+        <receiver
+        android:name="com.google.android.gcm.GCMBroadcastReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND" >
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+            <category android:name="com.pulp" />
+        </intent-filter>
+    </receiver>
+        
+         
+    </application>
+
+</manifest>

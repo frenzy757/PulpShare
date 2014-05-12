@@ -1,0 +1,10 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1381950479000 84721 8f8b2bf3004096b8bedbc1d417830a6c828627ea /Users/brandonim/Dropbox/Android_Dev_Mac/Pulp_EZ_Share/Pulp/libs/foursquare-api-1.0.2.jar
+1381950479000 84721 8f8b2bf3004096b8bedbc1d417830a6c828627ea /Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/easyFoursquare4Android-master/libs/foursquare-api-1.0.2.jar
+1381950479000 189617 42a24d508f5e05bd22cc42bd2e2babd7b5466ec9 /Users/brandonim/Dropbox/Android_Dev_Mac/Pulp_EZ_Share/Pulp/libs/gson-2.2.1.jar
+1381950479000 189617 42a24d508f5e05bd22cc42bd2e2babd7b5466ec9 /Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/easyFoursquare4Android-master/libs/gson-2.2.1.jar
+1379102968000 556198 4a6be13368bb64c5a0b0460632d228a1a915f58f /Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/FourSquare/foursquare-android-oauth-master/foursquare-oauth-library/libs/android-support-v4.jar
+1379102968000 556198 4a6be13368bb64c5a0b0460632d228a1a915f58f /Users/brandonim/Dropbox/Android_Dev_Mac/Pulp_EZ_Share/Pulp/libs/android-support-v4.jar
+1379102968000 556198 4a6be13368bb64c5a0b0460632d228a1a915f58f /Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/facebook-android-sdk-3.5/facebook/libs/android-support-v4.jar

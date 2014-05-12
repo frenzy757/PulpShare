@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pulp</string>
+    <string name="title_action_detail">Pulp</string>
+    <string name="edit_text_hint">"Enter Status Here"</string>
+    <string name="title_activity_share_option_launcher_logic">ShareOptionLauncherLogic</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_id">621866294530880</string>
+    
+    <string name="twitter_oauth_key">206891048-zBP2yIbs6rAfNmuz42524GvUtn2HK6Fo5OfX83zk</string>
+    <string name="twitter_oauth_secret">hsWidewBU3ppVgHMLIRGPMtvYeJVD2RspwmlpyKF8</string>
+    <string name="consumer_key">jJ9GvyAq02QPTddijk2gdg</string>
+    <string name="consumer_secret">tp1ZtOBDCuXYbBIiwdLevDXGlWvUgRjhtaprpuesQA</string>
+    <string name="access_token"></string>
+    <string name="access_token_secret"></string>
+    <string name="venue_checkin_label">Checking Into:</string>
+ 
+
+</resources>

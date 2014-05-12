@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".ShareOptionListFragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/edit_text_hint"
+            android:maxLength="400" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/share_to_foursquare_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/share_to_twitter_switch"
+             android:layout_below="@+id/share_to_twitter_switch"
+             android:layout_marginTop="15dp"
+             android:text="Add Foursquare Checkin" />
+
+         <TextView
+             android:id="@+id/venue_chosen_label"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/share_to_facebook_switch"
+             android:layout_alignRight="@+id/share_to_foursquare_button"
+             android:layout_below="@+id/share_to_foursquare_button"
+             android:layout_marginTop="16dp"
+             android:gravity="center"
+             android:text="Checking Into:" 
+             android:visibility="gone"/>
+         
+         <TextView
+             android:id="@+id/venue_chosen"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/share_to_facebook_switch"
+             android:layout_alignRight="@+id/share_to_foursquare_button"
+             android:layout_below="@+id/venue_chosen_label"
+             android:layout_marginTop="16dp"
+             android:gravity="center"
+             android:text="" />
+
+         <Button
+             android:id="@+id/share_picture_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/share_to_foursquare_button"
+             android:layout_below="@+id/venue_chosen"
+             android:text="Share Picture" />
+
+         <Switch
+             android:id="@+id/share_to_facebook_switch"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="38dp"
+             android:text="Share to Facebook" />
+
+         <Switch
+             android:id="@+id/share_to_twitter_switch"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/share_to_facebook_switch"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="15dp"
+             android:text="Share to Twitter" />
+
+         <ImageView
+             android:id="@+id/picture_to_share"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_alignLeft="@+id/share_to_twitter_switch"
+             android:layout_alignTop="@+id/venue_chosen"
+             android:scaleType="centerInside"
+             android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14" 
+        android:gravity="bottom">
+       
+
+        <Button
+            android:id="@+id/share_status_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:minWidth="400dip"
+            android:text="Share Status" />
+
+    </RelativeLayout>
+
+</LinearLayout>

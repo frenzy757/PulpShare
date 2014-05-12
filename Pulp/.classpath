@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/Pulp_EZ_Share/Pulp/libs/gson-2.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/Pulp_EZ_Share/Pulp/libs/foursquare-api-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Desktop/adt-bundle-mac-x86_64-20131030/sdk/platforms/android-19/android.jar" sourcepath="/FacebookSDK">
+		<attributes>
+			<attribute name="javadoc_location" value="http://developer.android.com/reference/"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/twitter4j-3.0.4/lib/twitter4j-async-3.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/twitter4j-3.0.4/lib/twitter4j-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/twitter4j-3.0.4/lib/twitter4j-examples-3.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/twitter4j-3.0.4/lib/twitter4j-media-support-3.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/twitter4j-3.0.4/lib/twitter4j-stream-3.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/signpost-commonshttp4-1.2.1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/signpost-core-1.2.1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/Twitter/signpost-jetty6-1.2.1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/easyFoursquare4Android-master/libs/foursquare-api-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/easyFoursquare4Android-master/libs/gson-2.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/brandonim/Dropbox/Android_Dev_Mac/SDK_Libs/FourSquare/foursquare-android-oauth-master/foursquare-oauth-library/libs/android-support-v4.jar"/>
+	<classpathentry kind="src" path="mobilebackend-v1-generated-source"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

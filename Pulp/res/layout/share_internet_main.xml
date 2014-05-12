@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShareOptionListFragment" >
+
+    <Switch
+        android:id="@+id/share_internet_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Share Internet" />
+
+    <EditText
+        android:id="@+id/hotspot_password"
+        android:hint="Enter Wifi Hotspot Password Here (must be 8 characters)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/share_internet_switch"
+        android:layout_alignRight="@+id/share_internet_switch"
+        android:layout_marginBottom="58dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/share_internet_switch"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:text="Network Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hotspot_password"
+        android:layout_alignLeft="@+id/share_internet_switch"
+        android:layout_marginBottom="19dp"
+        android:text="Network Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/hotspot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hotspot_password"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:ems="10" />
+
+</RelativeLayout>
